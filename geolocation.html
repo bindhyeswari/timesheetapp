@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        /*getData(function(data){
+            console.log(data)
+        }, 'africa');
+        function getData(){
+            var callback;
+            for ( var i = 0; i < arguments.length; i++ ) {
+                if ( typeof arguments[i] === 'function' ) {
+                    callback = arguments[i];
+                }
+            }
+            if ( arguments.length === 2 ) {
+                var region = arguments.indexOf(callback) ? arguments[0] : arguments[1];
+                // countries by region
+            } else {
+                // all country data
+            }
+        }*/
+
+        // references
+        // http://diveintohtml5.info/geolocation.html
+        // http://www.w3schools.com/html/html5_geolocation.asp
+        // http://dev.w3.org/geo/api/spec-source.html
+        // hashing
+        // http://en.wikipedia.org/wiki/Hash_function
+        //
+        // http://www.myersdaily.org/joseph/javascript/md5-text.html
+
+
+        navigator.geolocation.getCurrentPosition(function (data){
+            console.log(navigator.userAgent);
+            console.log(data);
+            // current address of a user when the page loads
+            // https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse
+        });
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
